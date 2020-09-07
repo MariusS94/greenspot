@@ -9,7 +9,7 @@
     "test": "npm run lint && cd client && npm test",
     "start": "node server.js",
     "lint": "eslint . --ext .js",
-    "build": "cd client && npm run build",
+    "build": "cd client && npm run build && run storybook",
     "prettify": "npx prettier --write ."
   },
   "repository": {
