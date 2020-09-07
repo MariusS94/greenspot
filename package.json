@@ -1,0 +1,25 @@
+{
+  "name": "greenenergyindex",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Final project for neue fische bootcamp",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariusS94/greenenergyindex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariusS94/greenenergyindex/issues"
+  },
+  "homepage": "https://github.com/MariusS94/greenenergyindex#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
