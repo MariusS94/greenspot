@@ -5,6 +5,7 @@
   "description": "Final project for neue fische bootcamp",
   "main": "server.js",
   "scripts": {
+    "postinstall": "cd client && npm install",
     "test": "npm run lint && cd client && npm test",
     "start": "node server.js",
     "lint": "eslint . --ext .js",
