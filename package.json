@@ -8,6 +8,7 @@
     "test": "npm run lint && cd client && npm test",
     "start": "node server.js",
     "lint": "eslint . --ext .js",
+    "build": "cd client && npm run build",
     "prettify": "npx prettier --write ."
   },
   "repository": {
