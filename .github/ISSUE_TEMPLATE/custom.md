@@ -3,12 +3,14 @@ name: Custom issue template
 about: An individual form to create user stories
 title: "[ ]"
 labels: userStory
-assignees: ""
+
+assignees: ''
+
 ---
 
 # User Story
+As a 
 
-As a
 I want to
 so
 
