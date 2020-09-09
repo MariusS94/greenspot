@@ -11,10 +11,9 @@
     "lint": "eslint . --ext .js",
     "server": "nodemon server.js",
     "client": "cd client && npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run storybook\" \"npm run api\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run storybook\"",
     "storybook": "cd client && npm run storybook",
     "build": "cd client && npm run build && npm run build-storybook",
-    "api": "json-server --watch db.json --port 3002",
     "prettify": "npx prettier --write ."
   },
   "repository": {
