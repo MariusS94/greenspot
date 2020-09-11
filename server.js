@@ -2,10 +2,18 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const jsonServer = require("json-server");
+const { fetchData } = require("./fetch-gsi");
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
 const port = process.env.PORT || 3001;
+
+app.get("/:zipCode", async function (req, res) {
+  const { zipCode } = req.params;
+  const greenEnergy = await fetchData(zipCode);
+  console.log(greenEnergy);
+  res.send(greenEnergy);
+});
 
 app.use(express.static(path.join(__dirname, "client/build")));
 
