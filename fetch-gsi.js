@@ -10,7 +10,9 @@ async function fetchData(zipCode) {
   }
   const result = await response.json();
 
-  return result;
+  const zipData = [result.forecast, result.location];
+
+  return zipData;
 }
 
 exports.fetchData = fetchData;
