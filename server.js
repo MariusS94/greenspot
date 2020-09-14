@@ -10,9 +10,8 @@ const port = process.env.PORT || 3001;
 
 app.get("/:zipCode", async function (req, res) {
   const { zipCode } = req.params;
-  const zipData = await fetchData(zipCode);
-  console.log(zipData);
-  res.send(zipData);
+  const zipForecast = await fetchData(zipCode);
+  res.send(zipForecast);
 });
 
 app.use(express.static(path.join(__dirname, "client/build")));
