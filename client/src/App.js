@@ -1,25 +1,45 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import Welcome from "./pages/Welcome";
+import Home from "./pages/Home";
+import Menue from "./pages/Menue";
+import Forecast from "./pages/Forecast";
+import ZipForecast from "./pages/ZipForecast";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Switch>
+          <Route path="/welcome">
+            <Welcome />
+          </Route>
+
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/menue">
+            <Menue />
+          </Route>
+          <Route exact path="/forecast">
+            <Forecast />
+          </Route>
+          <Route path="/forecast/zipcode">
+            <ZipForecast />
+          </Route>
+          <Route path="/">
+            <Redirect to="/welcome"></Redirect>
+          </Route>
+          <Route></Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
