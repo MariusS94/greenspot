@@ -8,7 +8,7 @@ const InputField = (probs) => {
       value={probs.value}
       onChange={(event) => probs.onChange(event.target.value)}
       placeholder={probs.placeholder}
-    ></input>
+    />
   );
 };
 
