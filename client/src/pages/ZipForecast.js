@@ -17,9 +17,11 @@ const ZipForecast = () => {
         setError(null);
         const fetchedForecast = await fetchForecast(zip);
         setForecastData(fetchedForecast);
-        setLoading(false);
       } catch (error) {
         console.error(error);
+        setError(true);
+      } finally {
+        setLoading(false);
       }
     }
     fetchData();
