@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import InputField from "../components/InputField";
+import LinkButton from "../components/LinkButton";
 
 const ZipInput = () => {
-  return <div>input</div>;
+  const [query, setQuery] = useState("");
+  return (
+    <div>
+      <InputField
+        type="number"
+        value={query}
+        onChange={(value) => setQuery(value)}
+        placeholder="PLZ Eingabe"
+      ></InputField>
+      <LinkButton link={`/forecast/${query}`} label="Bestätigen"></LinkButton>
+    </div>
+  );
 };
 
 export default ZipInput;
