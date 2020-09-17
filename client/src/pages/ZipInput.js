@@ -11,7 +11,7 @@ const ZipInput = () => {
         value={query}
         onChange={(value) => setQuery(value)}
         placeholder="PLZ Eingabe"
-      ></InputField>
+      />
       <LinkButton link={`/forecast/${query}`} label="Bestätigen"></LinkButton>
     </div>
   );
