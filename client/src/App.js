@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import Menue from "./pages/Menue";
 import Forecast from "./pages/Forecast";
 import ZipForecast from "./pages/ZipForecast";
+import ZipInput from "./pages/ZipInput";
 
 function App() {
   return (
@@ -30,8 +31,11 @@ function App() {
           <Route exact path="/forecast">
             <Forecast />
           </Route>
-          <Route path="/forecast/zipcode">
+          <Route path="/forecast/:zip">
             <ZipForecast />
+          </Route>
+          <Route path="/zipinput">
+            <ZipInput />
           </Route>
           <Route path="/">
             <Redirect to="/welcome"></Redirect>
