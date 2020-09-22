@@ -1,0 +1,13 @@
+<svg id="energy.svg" xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40">
+  <g id="_001-energie" data-name="001-energie" transform="translate(13.221 8.27)">
+    <path id="Path_3" data-name="Path 3" d="M112.167,8.362l-5.007,1.095L109.608.883A.692.692,0,0,0,108.377.3L98.611,14.171a.692.692,0,0,0,.731,1.069l4.462-1.1-2.44,8.582a.692.692,0,0,0,1.221.6L112.87,9.449a.692.692,0,0,0-.7-1.087Z" transform="translate(-98.483 0)" fill="#dea64c"/>
+    <path id="Path_4" data-name="Path 4" d="M313.4,364.8l-1.659-.028.881-1.733a.691.691,0,0,0-1.233-.627l-1.383,2.72c-.281.552.087.913.617,1l1.656.028-.892,1.784a.691.691,0,0,0,1.237.619l1.383-2.766A.693.693,0,0,0,313.4,364.8Z" transform="translate(-300.163 -345.349)" fill="#dea64c"/>
+    <path id="Path_5" data-name="Path 5" d="M102.773.112a.692.692,0,0,0-.928.309l-1.383,2.766a.693.693,0,0,0,.623,1h1.643l-.883,1.765a.691.691,0,0,0,1.237.619l1.383-2.766a.693.693,0,0,0-.619-1H102.2l.883-1.765A.692.692,0,0,0,102.773.112Z" transform="translate(-100.301 -0.037)" fill="#dea64c"/>
+  </g>
+  <g id="Group_25" data-name="Group 25">
+    <g id="Rectangle_37" data-name="Rectangle 37" fill="none" stroke="#dea64c" stroke-width="1">
+      <rect width="41" height="40" rx="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="40" height="39" rx="9.5" fill="none"/>
+    </g>
+  </g>
+</svg>
