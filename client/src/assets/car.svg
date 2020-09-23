@@ -1,0 +1,17 @@
+<svg id="charge.svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="_002-autoladung" data-name="002-autoladung" transform="translate(7.604 8.27)">
+    <g id="Group_13" data-name="Group 13" transform="translate(0 0)">
+      <path id="Path_6" data-name="Path 6" d="M23.688,32.655c-.189-.906-.49-1.719-.967-1.851-1.152-.32-4.449-1.849-4.449-1.849v0C16.7,25.386,13.537,24.82,9.888,24.82c-4.682,0-8.567.934-9.31,7.961a2,2,0,0,0,1.279,3.4,3.463,3.463,0,0,1,6.925.015H15.41a3.482,3.482,0,0,1,3.462-3.464c.109,0,.217.007.324.016a3.475,3.475,0,0,1,3.139,3.447h.074a2,2,0,0,0,1.58-.783H24s0,0,0-.013a1.977,1.977,0,0,0-.311-2.744Z" transform="translate(0 -15.406)" fill="#fff"/>
+      <path id="Path_7" data-name="Path 7" d="M11.991,49.335h0a2.666,2.666,0,0,0-5.331,0h0a2.666,2.666,0,1,0,5.331,0Zm-4.123,0a1.457,1.457,0,1,1,1.457,1.457A1.443,1.443,0,0,1,7.869,49.335Z" transform="translate(-4.005 -28.545)" fill="#fff"/>
+      <path id="Path_8" data-name="Path 8" d="M45.991,49.335h0a2.656,2.656,0,0,0-3.267-2.594,2.662,2.662,0,0,0-2.064,2.594h0a2.666,2.666,0,1,0,5.331,0Zm-4.123,0a1.456,1.456,0,1,1,1.457,1.457A1.443,1.443,0,0,1,41.868,49.335Z" transform="translate(-24.452 -28.545)" fill="#fff"/>
+      <path id="Path_9" data-name="Path 9" d="M45.625,26.586c0,.22.239.266.44.266H47c.293,0,.62-.109.62-.266V24.63a5.217,5.217,0,0,1-1.993,0v1.956Z" transform="translate(-27.438 -15.292)" fill="#fff"/>
+      <path id="Path_10" data-name="Path 10" d="M53.22,1.687a.483.483,0,0,0-.483-.483h-.629a.483.483,0,0,0-.483.483v3.1H53.22v-3.1Z" transform="translate(-31.046 -1.204)" fill="#fff"/>
+      <path id="Path_11" data-name="Path 11" d="M42.22,1.687a.483.483,0,0,0-.483-.483h-.629a.483.483,0,0,0-.483.483v3.1H42.22v-3.1Z" transform="translate(-24.431 -1.204)" fill="#fff"/>
+      <path id="Path_12" data-name="Path 12" d="M36.334,12.2a4.662,4.662,0,0,0,3.305,4.058c.13.039.263.071.4.1a4.537,4.537,0,0,0,1.993-.032c.135-.032.268-.069.4-.112A4.659,4.659,0,0,0,45.6,12.2H36.334Z" transform="translate(-21.85 -7.819)" fill="#fff"/>
+    </g>
+  </g>
+  <g id="Rectangle_38" data-name="Rectangle 38" fill="none" stroke="#fff" stroke-width="1">
+    <rect width="40" height="40" rx="10" stroke="none"/>
+    <rect x="0.5" y="0.5" width="39" height="39" rx="9.5" fill="none"/>
+  </g>
+</svg>

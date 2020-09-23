@@ -1,0 +1,13 @@
+<svg id="news.svg" xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40">
+  <g id="Group_14" data-name="Group 14" transform="translate(-239 -669)">
+    <g id="_003-news-admin" data-name="003-news-admin" transform="translate(248.371 678.834)">
+      <path id="Path_13" data-name="Path 13" d="M16.514,34.955V16.933a.647.647,0,0,0-.647-.647H.647A.647.647,0,0,0,0,16.933V33.662A3.237,3.237,0,0,0,3.234,36.9H17.162A3.217,3.217,0,0,1,16.514,34.955ZM3.449,28.7h2.07a.647.647,0,1,1,0,1.293H3.449a.647.647,0,1,1,0-1.293ZM2.8,26.591a.647.647,0,0,1,.647-.647h2.07a.647.647,0,0,1,0,1.293H3.449A.647.647,0,0,1,2.8,26.591Zm10.3,7.2H3.449a.647.647,0,1,1,0-1.293h9.658a.647.647,0,1,1,0,1.293Zm.647-3.406a.647.647,0,0,1-.647.647H8.278a.647.647,0,0,1-.647-.647V25.556a.647.647,0,0,1,.647-.647h4.829a.647.647,0,0,1,.647.647Zm-.647-6.942H3.449a.647.647,0,0,1,0-1.293h9.658a.647.647,0,0,1,0,1.293Zm0-2.759H3.449a.647.647,0,0,1,0-1.293h9.658a.647.647,0,1,1,0,1.293Z" transform="translate(0 -16.286)" fill="#fff"/>
+      <path id="Path_14" data-name="Path 14" d="M207,246.286h3.536v3.536H207Z" transform="translate(-198.075 -236.369)" fill="#fff"/>
+      <path id="Path_15" data-name="Path 15" d="M416.613,120.286h-3.622c0,14.655,0,14.186,0,14.186a2.134,2.134,0,0,0,4.262-.048s0,.323,0-13.491A.647.647,0,0,0,416.613,120.286Z" transform="translate(-395.185 -115.802)" fill="#fff"/>
+    </g>
+    <g id="Rectangle_39" data-name="Rectangle 39" transform="translate(239 669)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="41" height="40" rx="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="40" height="39" rx="9.5" fill="none"/>
+    </g>
+  </g>
+</svg>
