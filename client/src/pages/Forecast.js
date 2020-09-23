@@ -11,7 +11,7 @@ const BackgroundContainer = styled.main`
 `;
 
 const ContentContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   backdrop-filter: blur(5px) saturate(1.2);
@@ -19,14 +19,12 @@ const ContentContainer = styled.div`
 
 const Forecast = () => {
   return (
-    <>
-      <BackgroundContainer>
-        <ContentContainer>
-          <BulpLogo />
-          <Footer />
-        </ContentContainer>
-      </BackgroundContainer>
-    </>
+    <BackgroundContainer>
+      <ContentContainer>
+        <BulpLogo />
+        <Footer />
+      </ContentContainer>
+    </BackgroundContainer>
   );
 };
 
