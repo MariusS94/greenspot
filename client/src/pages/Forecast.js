@@ -1,14 +1,8 @@
 import React from "react";
 import styled from "@emotion/styled";
-import windturbine from "../assets/windpower.png";
 import Footer from "../components/Footer";
 import BulpLogo from "../components/BulpLogo";
-
-const BackgroundContainer = styled.main`
-  background-image: url(${windturbine});
-  background-size: cover;
-  height: 100vh;
-`;
+import BackgroundContainer from "../components/BackgroundContainer";
 
 const ContentContainer = styled.div`
   height: 100%;
