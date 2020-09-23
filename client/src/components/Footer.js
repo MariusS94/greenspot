@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
-import energy from "../assets/energy.svg";
-import news from "../assets/news.svg";
-import car from "../assets/car.svg";
-import options from "../assets/options.svg";
+import energySrc from "../assets/energy.svg";
+import newsSrc from "../assets/news.svg";
+import carSrc from "../assets/car.svg";
+import optionsSrc from "../assets/options.svg";
 
-const FooterContainer = styled.div`
+const FooterContainer = styled.footer`
   background: rgba(134, 134, 134, 0.5);
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
 `;
 
 const FooterNav = styled.nav`
@@ -30,16 +30,16 @@ export const Footer = () => {
     <FooterContainer>
       <FooterNav>
         <Link to="/home">
-          <FooterIcon src={energy} alt="energy icon" />
+          <FooterIcon src={energySrc} alt="energy icon" />
         </Link>
         <Link to="/home">
-          <FooterIcon src={news} alt="news icon" />
+          <FooterIcon src={newsSrc} alt="news icon" />
         </Link>
         <Link to="/home">
-          <FooterIcon src={car} alt="e-car charge icon" />
+          <FooterIcon src={carSrc} alt="e-car charge icon" />
         </Link>
         <Link to="/home">
-          <FooterIcon src={options} alt="options icon" />
+          <FooterIcon src={optionsSrc} alt="options icon" />
         </Link>
       </FooterNav>
     </FooterContainer>
