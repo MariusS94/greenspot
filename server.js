@@ -8,7 +8,7 @@ const middlewares = jsonServer.defaults();
 
 const port = process.env.PORT || 3001;
 
-app.get("/:zipCode", async function (req, res) {
+app.get("/api/forecast/:zipCode", async function (req, res) {
   const { zipCode } = req.params;
   const zipForecast = await fetchData(zipCode);
   res.send(zipForecast);
