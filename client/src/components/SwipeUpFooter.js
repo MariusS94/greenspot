@@ -16,9 +16,10 @@ const SwipeFooter = styled.footer`
 `;
 
 export const SwipeUpFooter = () => {
+  const zip = localStorage.getItem("zip");
   return (
     <SwipeFooter>
-      <Link to="/forecast">
+      <Link to={`/energy/forecast/${zip}`}>
         <img src={SwipeArrowSrc} alt="Arrow up icon " />
       </Link>
     </SwipeFooter>
