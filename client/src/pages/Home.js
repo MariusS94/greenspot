@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { fetchCurrentGsi, fetchCity } from "../api/fetchForecast";
+import { fetchCurrentGsi } from "../api/fetchForecast";
 import BackgroundContainer from "../components/BackgroundContainer";
 import SwipeUpFooter from "../components/SwipeUpFooter";
 import styled from "@emotion/styled";
+import ErrorScreen from "../components/ErrorScreen";
 
 const CurrentGsiDisplay = styled.div`
   font-size: 25vw;
@@ -28,30 +29,44 @@ const InfoWrapper = styled.div`
 `;
 
 const Home = () => {
-  const [currentGsi, setCurrentGsi] = useState("");
-  const [city, setCity] = useState("");
+  const [currentGsiCity, setCurrentGsiCity] = useState("");
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     const zip = localStorage.getItem("zip") || "53842";
     async function doFetch() {
-      const city = await fetchCity(zip);
-      const currentGsi = await fetchCurrentGsi(zip);
-      setCity(city);
-      setCurrentGsi(currentGsi);
+      try {
+        setError(null);
+        const currentGsi = await fetchCurrentGsi(zip);
+        setCurrentGsiCity(currentGsi);
+        setIsLoaded(true);
+      } catch (error) {
+        console.error(error);
+        setError(true);
+      }
     }
     doFetch();
   }, []);
 
-  return (
-    <BackgroundContainer>
-      <InfoWrapper>
-        <CityDisplay>{city}</CityDisplay>
-        <CurrentGsiDisplay>{currentGsi + "%"}</CurrentGsiDisplay>
-        <InfoText>Aktueller Ökostromanteil</InfoText>
-      </InfoWrapper>
-      <SwipeUpFooter />
-    </BackgroundContainer>
-  );
+  if (error) {
+    return <ErrorScreen />;
+  }
+
+  if (isLoaded) {
+    return (
+      <BackgroundContainer>
+        <InfoWrapper>
+          <CityDisplay>{currentGsiCity.city}</CityDisplay>
+          <CurrentGsiDisplay>{currentGsiCity.gsi + "%"}</CurrentGsiDisplay>
+          <InfoText>Aktueller Ökostromanteil</InfoText>
+        </InfoWrapper>
+        <SwipeUpFooter />
+      </BackgroundContainer>
+    );
+  }
+
+  return <BackgroundContainer />;
 };
 
 export default Home;
