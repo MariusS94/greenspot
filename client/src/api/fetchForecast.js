@@ -22,20 +22,10 @@ export async function fetchForecast(zip) {
 }
 
 export async function fetchCurrentGsi(zip) {
-  const zipForecast = await fetchForecast(zip);
-  return zipForecast.energyPropForecast[0].gsi;
+  const zipCurrentGsi = await fetchForecast(zip);
+  const results = {
+    gsi: zipCurrentGsi.energyPropForecast[0].gsi,
+    city: zipCurrentGsi.city,
+  };
+  return results;
 }
-
-export async function fetchCity(zip) {
-  const zipCity = await fetchForecast(zip);
-  return zipCity.city;
-}
-
-/* export async function fetchCurrentGsi(zip) {
-  const currentInfo = await fetchForecast(zip);
-  
-  
-  const CityGsi = {gsi: currentInfo.energyPropForecast[0].gsi,
-    city: 
-}
- */
