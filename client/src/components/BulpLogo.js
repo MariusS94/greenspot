@@ -12,7 +12,7 @@ const BulpIcon = styled.img`
 const BulpLogo = () => {
   return (
     <>
-      <Link to="/home">
+      <Link to="/energy/home">
         <BulpIcon src={bulp} alt="Bulp logo" />
       </Link>
     </>
