@@ -13,4 +13,4 @@ const Template = () => (
   </Router>
 );
 
-export const EnergyFooter = Template.bind({});
+export const BulpLogoHome = Template.bind({});
