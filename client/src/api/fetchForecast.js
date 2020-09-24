@@ -1,5 +1,5 @@
 export async function fetchForecast(zip) {
-  const response = await fetch(`/${zip}`);
+  const response = await fetch(`/api/forecast/${zip}`);
 
   if (!response.ok) {
     throw new Error(response);
@@ -19,4 +19,13 @@ export async function fetchForecast(zip) {
   };
 
   return zipForecast;
+}
+
+export async function fetchCurrentGsi(zip) {
+  const zipCurrentGsi = await fetchForecast(zip);
+  const results = {
+    gsi: zipCurrentGsi.energyPropForecast[0].gsi,
+    city: zipCurrentGsi.city,
+  };
+  return results;
 }
