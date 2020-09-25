@@ -8,9 +8,6 @@ import optionsSrc from "../assets/options.svg";
 
 const FooterContainer = styled.footer`
   background: rgba(134, 134, 134, 0.5);
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
 `;
 
