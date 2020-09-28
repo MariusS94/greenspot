@@ -10,7 +10,7 @@ import Welcome from "./pages/Welcome";
 import Home from "./pages/Home";
 import Forecast from "./pages/Forecast";
 import Note from "./pages/Note";
-import ViewPortContainer from "./components/ViewPortContainer";
+import FullHeightContainer from "./components/FullHeightContainer";
 
 function App() {
   return (
