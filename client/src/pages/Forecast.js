@@ -1,16 +1,25 @@
 import React from "react";
 import Footer from "../components/Footer";
-import BulpLogo from "../components/BulpLogo";
 import BackgroundContainer from "../components/BackgroundContainer";
-import ContentContainer from "../components/ContentContainer";
+import ForecastCarousel from "../components/ForecastCarousel";
+import LogoHeader from "../components/LogoHeader";
+import styled from "@emotion/styled";
+
+const PageWrapper = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(5px) saturate(1.2);
+`;
 
 const Forecast = () => {
   return (
     <BackgroundContainer>
-      <ContentContainer>
-        <BulpLogo />
+      <PageWrapper>
+        <LogoHeader />
+        <ForecastCarousel />
         <Footer />
-      </ContentContainer>
+      </PageWrapper>
     </BackgroundContainer>
   );
 };

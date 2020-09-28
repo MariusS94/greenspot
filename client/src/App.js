@@ -10,10 +10,11 @@ import Welcome from "./pages/Welcome";
 import Home from "./pages/Home";
 import Forecast from "./pages/Forecast";
 import Note from "./pages/Note";
+import FullHeightContainer from "./components/FullHeightContainer";
 
 function App() {
   return (
-    <>
+    <FullHeightContainer>
       <Router>
         <Switch>
           <Route path="/welcome">
@@ -40,7 +41,7 @@ function App() {
           <Route></Route>
         </Switch>
       </Router>
-    </>
+    </FullHeightContainer>
   );
 }
 
