@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 
-const ViewPortContainer = styled.div`
+const FullHeightContainer = styled.div`
   height: 100vh;
   width: 100vw;
 `;
 
-export default ViewPortContainer;
+export default FullHeightContainer;

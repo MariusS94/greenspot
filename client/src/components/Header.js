@@ -4,7 +4,7 @@ import bulp from "../assets/bulp.svg";
 
 import styled from "@emotion/styled";
 
-const HeaderContainer = styled.header`
+const Header = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,14 +17,14 @@ const BulpIcon = styled.img`
   padding: 1rem 0;
 `;
 
-export const Header = () => {
+export const LogoHeader = () => {
   return (
-    <HeaderContainer>
+    <Header>
       <Link to="/energy/home">
         <BulpIcon src={bulp} alt="Bulp logo" />
       </Link>
-    </HeaderContainer>
+    </Header>
   );
 };
 
-export default Header;
+export default LogoHeader;
