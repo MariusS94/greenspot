@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import BackgroundContainer from "../components/BackgroundContainer";
 import ForecastCarousel from "../components/ForecastCarousel";
-import Header from "../components/Header";
+import LogoHeader from "../components/LogoHeader";
 import styled from "@emotion/styled";
 
 const PageWrapper = styled.div`
@@ -16,7 +16,7 @@ const Forecast = () => {
   return (
     <BackgroundContainer>
       <PageWrapper>
-        <Header />
+        <LogoHeader />
         <ForecastCarousel />
         <Footer />
       </PageWrapper>

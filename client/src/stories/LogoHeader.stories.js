@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
-import { Header } from "../components/Header.js";
+import { LogoHeader } from "../components/LogoHeader.js";
 
 export default {
-  title: "Header",
-  component: Header,
+  title: "LogoHeader",
+  component: LogoHeader,
 };
 
 const Template = () => (
   <Router>
-    <Header />
+    <LogoHeader />
   </Router>
 );
 
