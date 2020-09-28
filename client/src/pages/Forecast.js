@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
 import BackgroundContainer from "../components/BackgroundContainer";
-/* import ContentContainer from "../components/ContentContainer"; */
 import ForecastCarousel from "../components/ForecastCarousel";
 import Header from "../components/Header";
 import styled from "@emotion/styled";
