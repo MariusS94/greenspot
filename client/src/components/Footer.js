@@ -29,13 +29,13 @@ export const Footer = () => {
         <Link to="/home">
           <FooterIcon src={energySrc} alt="energy icon" />
         </Link>
-        <Link to="/home">
+        <Link to="/news/home">
           <FooterIcon src={newsSrc} alt="news icon" />
         </Link>
-        <Link to="/home">
+        <Link to="/mobility/home">
           <FooterIcon src={carSrc} alt="e-car charge icon" />
         </Link>
-        <Link to="/home">
+        <Link to="/options">
           <FooterIcon src={optionsSrc} alt="options icon" />
         </Link>
       </FooterNav>
