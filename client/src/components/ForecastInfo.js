@@ -2,7 +2,7 @@ import React from "react";
 import ContentContainer from "./ContentContainer";
 import styled from "@emotion/styled";
 
-const InfoTextContainer = styled.div`
+const InfoText = styled.p`
   padding: 0 2rem;
 `;
 
