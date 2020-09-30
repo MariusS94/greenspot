@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import InputField from "./InputField";
-/* import LinkButton from "./LinkButton"; */
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 import { useHistory } from "react-router-dom";
-
-/* const PopUpWrapper = styled.div`
- display: flex;
-  justify-content: center;
-`; */
 
 const ZipInputWindow = styled.div`
   position: relative;
@@ -24,7 +18,6 @@ const ZipInputWindow = styled.div`
 `;
 
 const SubmitButton = styled.button`
-  /* border-radius: 1rem; */
   border: none;
   padding: 0.2rem;
   margin-top: 3rem;
