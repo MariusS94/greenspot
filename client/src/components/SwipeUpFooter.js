@@ -16,7 +16,7 @@ const SwipeFooter = styled.footer`
 `;
 
 export const SwipeUpFooter = () => {
-  const zip = localStorage.getItem("zip");
+  const zip = localStorage.getItem("zip") || 53842;
   return (
     <SwipeFooter>
       <Link to={`/energy/forecast/${zip}`}>
