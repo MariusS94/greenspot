@@ -50,7 +50,7 @@ export const ZipInputPopUp = (props) => {
         onChange={(value) => setQuery(value)}
         placeholder="PLZ Eingabe"
       />
-      <SubmitButton onClick={handleClick} disabled={query.length < 1}>
+      <SubmitButton onClick={handleClick} disabled={query.length === 5}>
         Bestätigen
       </SubmitButton>
     </ZipInputWindow>
