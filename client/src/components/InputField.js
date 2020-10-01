@@ -1,10 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "@emotion/styled";
+
+const InputZip = styled.input`
+  border-radius: 1rem;
+  border: none;
+  padding: 0.2rem;
+  background: #ffffff;
+`;
 
 const InputField = (props) => {
   return (
-    <input
-      type={props.type}
+    <InputZip
       value={props.value}
       onChange={(event) => props.onChange(event.target.value)}
       placeholder={props.placeholder}
@@ -15,7 +22,6 @@ const InputField = (props) => {
 export default InputField;
 
 InputField.propTypes = {
-  type: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
