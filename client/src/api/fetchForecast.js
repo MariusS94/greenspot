@@ -8,7 +8,7 @@ export async function fetchForecast(zip) {
   const results = await response.json();
 
   const energyPropForecast = results[0].map((forecastData) => ({
-    time: forecastData.timeStamp,
+    time: forecastData.epochtime,
     gsi: forecastData.gsi,
   }));
 
