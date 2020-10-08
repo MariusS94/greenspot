@@ -3,6 +3,7 @@ import ContentContainer from "./ContentContainer";
 import ZipInputPopUp from "./ZipInputPopUp";
 import { useParams } from "react-router-dom";
 import styled from "@emotion/styled";
+import Chart from "./Chart";
 
 const ZipButton = styled.button`
   border: none;
@@ -28,8 +29,9 @@ export const ForecastChart = () => {
 
   return (
     <ContentContainer>
-      {!isOpen && <ZipButton onClick={togglePopup}>PLZ Eingabe</ZipButton>}
+      <ZipButton onClick={togglePopup}>PLZ Eingabe</ZipButton>
       {isOpen && <ZipInputPopUp handleClose={togglePopup} />}
+      <Chart />
     </ContentContainer>
   );
 };
