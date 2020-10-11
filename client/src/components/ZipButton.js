@@ -15,6 +15,7 @@ const ZipButtonContainer = styled.button`
   border-radius: 1rem;
   outline: none;
   margin: 0.6rem;
+  margin-bottom: 1.5rem;
 `;
 
 const CityName = styled.div`
