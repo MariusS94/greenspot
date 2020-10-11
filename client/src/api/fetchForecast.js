@@ -29,3 +29,10 @@ export async function fetchCurrentGsi(zip) {
   };
   return results;
 }
+
+export async function fetchCity(zip) {
+  const zipCity = await fetchForecast(zip);
+  const results = { city: zipCity.city };
+
+  return results;
+}
