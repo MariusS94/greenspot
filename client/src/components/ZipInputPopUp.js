@@ -6,7 +6,6 @@ import { useHistory } from "react-router-dom";
 
 const ZipInputWindow = styled.div`
   position: fixed;
-
   z-index: 2;
   background: rgb(105, 105, 105, 0.7);
   height: 15rem;
@@ -17,6 +16,7 @@ const ZipInputWindow = styled.div`
   flex-direction: column;
   padding-top: 2rem;
   border-radius: 2rem;
+  margin-top: 7rem;
 `;
 
 const SubmitButton = styled.button`
@@ -35,6 +35,19 @@ const CloseingItem = styled.span`
   top: 1rem;
 `;
 
+const PopUpContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(105, 105, 105, 0.5);
+  backdrop-filter: blur(5px);
+`;
+
 export const ZipInputPopUp = (props) => {
   const [query, setQuery] = useState("");
   const history = useHistory();
@@ -51,17 +64,19 @@ export const ZipInputPopUp = (props) => {
   };
 
   return (
-    <ZipInputWindow>
-      <CloseingItem onClick={props.handleClose}>x</CloseingItem>
-      <InputField
-        value={query}
-        onChange={(value) => setQuery(value)}
-        placeholder="PLZ Eingabe"
-      />
-      <SubmitButton onClick={handleClick} disabled={query.length === !5}>
-        Bestätigen
-      </SubmitButton>
-    </ZipInputWindow>
+    <PopUpContainer>
+      <ZipInputWindow>
+        <CloseingItem onClick={props.handleClose}>x</CloseingItem>
+        <InputField
+          value={query}
+          onChange={(value) => setQuery(value)}
+          placeholder="PLZ Eingabe"
+        />
+        <SubmitButton onClick={handleClick} disabled={query.length === !5}>
+          Bestätigen
+        </SubmitButton>
+      </ZipInputWindow>
+    </PopUpContainer>
   );
 };
 
