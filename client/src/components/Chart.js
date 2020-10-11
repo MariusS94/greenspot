@@ -61,9 +61,30 @@ export const Chart = () => {
 
   return (
     <ChartContainer width={350} height={350}>
-      <BarChart data={forecastData}>
-        <XAxis dataKey="time" stroke="white" />
-        <YAxis stroke="white" />
+      <BarChart margin={{ bottom: 15 }} data={forecastData}>
+        <XAxis
+          label={{
+            value: "[Uhrzeit h]",
+            position: "insideBottomRight",
+            dy: 13,
+            dx: 0,
+
+            fill: "white",
+          }}
+          dataKey="time"
+          stroke="white"
+        />
+        <YAxis
+          label={{
+            value: "[Ökostromanteil %]",
+            position: "insideTop",
+            fill: "white",
+            dy: 63,
+            dx: -15,
+            angle: -90,
+          }}
+          stroke="white"
+        />
 
         <Bar dataKey="gsi">
           {forecastData.map((entry, index) => (
