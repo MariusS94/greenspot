@@ -3,6 +3,7 @@ import InputField from "./InputField";
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 import { useHistory } from "react-router-dom";
+import HoursSelection from "./HoursSelection";
 
 const ZipInputWindow = styled.div`
   position: fixed;
@@ -21,11 +22,11 @@ const ZipInputWindow = styled.div`
 
 const SubmitButton = styled.button`
   border: none;
-  padding: 0.2rem;
-  margin-top: 3rem;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid;
+  padding: 0.3rem 3rem;
+  margin-top: 0.1rem;
+  background: #3d846d;
+  border: solid 1px white;
+  border-radius: 1rem;
   color: #ffffff;
 `;
 
@@ -50,7 +51,19 @@ const PopUpContainer = styled.div`
 
 export const ZipInputPopUp = (props) => {
   const [query, setQuery] = useState("");
+  const [hours, setHours] = useState(7);
   const history = useHistory();
+
+  const hoursSix = () => {
+    setHours(6);
+  };
+
+  const hoursTwelve = () => {
+    setHours(12);
+  };
+  const hoursTwentyfour = () => {
+    setHours(24);
+  };
 
   const handleClick = () => {
     if (query === localStorage.getItem("zip")) {
@@ -59,6 +72,7 @@ export const ZipInputPopUp = (props) => {
     if (query === "") {
       window.location.reload();
     }
+    localStorage.setItem("hours", hours);
     localStorage.setItem("zip", query);
     history.push(`/energy/forecast/${query}`);
   };
@@ -72,6 +86,13 @@ export const ZipInputPopUp = (props) => {
           onChange={(value) => setQuery(value)}
           placeholder="PLZ Eingabe"
         />
+
+        <HoursSelection
+          six={hoursSix}
+          twelve={hoursTwelve}
+          twentyfour={hoursTwentyfour}
+        />
+
         <SubmitButton onClick={handleClick} disabled={query.length === !5}>
           Bestätigen
         </SubmitButton>
