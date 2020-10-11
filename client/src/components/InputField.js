@@ -7,6 +7,7 @@ const InputZip = styled.input`
   border: none;
   padding: 0.2rem;
   background: #ffffff;
+  outline: none;
 `;
 
 const InputField = (props) => {
