@@ -12,7 +12,7 @@ const Header = styled.header`
 `;
 
 const BulpIcon = styled.img`
-  height: 2.5rem;
+  height: 3rem;
   width: auto;
   padding: 1rem 0;
 `;
