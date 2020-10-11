@@ -40,6 +40,12 @@ export const ZipInputPopUp = (props) => {
   const history = useHistory();
 
   const handleClick = () => {
+    if (query === localStorage.getItem("zip")) {
+      props.handleClose();
+    }
+    if (query === "") {
+      window.location.reload();
+    }
     localStorage.setItem("zip", query);
     history.push(`/energy/forecast/${query}`);
   };
@@ -64,4 +70,5 @@ export default ZipInputPopUp;
 ZipInputPopUp.propTypes = {
   handleClose: PropTypes.func,
   callBackFunc: PropTypes.func,
+  onClick: PropTypes.func,
 };
