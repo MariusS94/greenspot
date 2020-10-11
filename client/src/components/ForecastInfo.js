@@ -5,21 +5,27 @@ import styled from "@emotion/styled";
 const InfoText = styled.p`
   padding: 0 2rem;
 `;
-
+const Headline = styled.h2`
+  margin: 0.1rem;
+`;
 export const ForecastInfo = () => {
   return (
     <ContentContainer>
-      <h1>Ökostrom</h1>
+      <Headline>Information</Headline>
       <InfoText>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-        ipsum dolor sit amet.
+        Der Anteil von Strom aus regenerativen Quellen in unserem Stromnetz
+        schwangt extrem. Der Aussbau der regenerativen Stromerzeuger wächst zwar
+        stetig, aber schon heute bleibt viel Ökostrom ungenutz, weil es sich
+        immer noch schwierg geschtaltet große Mengen Strom zu speichern. Wäre es
+        also nicht super zu wissen wann der Ökostromanteil im heimischen
+        Stromnetz besonders hoch ist, damit man seine energieintensiven
+        Tätigkeiten am besten für einen solchen Zeitraum einplant? Genau dabei
+        möchte GreenSpot behilflich sein. Über die Eingabe seiner Postleitzahl
+        bekommt man in einem Diagramm aufgeschlüsselt, wann der Ökstromanteil im
+        heimischen Netz bei wie viel Prozent liegt. Dabei kann man selbst
+        bestimmen ob man eine Prognose für 6, 12 oder 24 Stunden haben möchte.
+        Somit kann jeder ganz persönlich die Energiewende unterstützen und
+        seinen Beitrag zu einer gesunden Umwelt leisten.
       </InfoText>
     </ContentContainer>
   );
