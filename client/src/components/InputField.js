@@ -6,6 +6,7 @@ const InputZip = styled.input`
   border-radius: 1rem;
   border: none;
   padding: 0.2rem;
+  padding-left: 0.5rem;
   background: #ffffff;
   outline: none;
 `;

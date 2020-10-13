@@ -21,6 +21,7 @@ export const Chart = () => {
   const [forecastData, setForecastData] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [hours, setHours] = useState(0);
   const { zip } = useParams();
 
   const convert = (timestamp) => {
@@ -34,8 +35,12 @@ export const Chart = () => {
       try {
         setLoading(true);
         setError(null);
+        setHours(localStorage.getItem("hours"));
         const fetchedForecast = await fetchForecast(zip);
-        const slicedForecast = fetchedForecast.energyPropForecast.slice(0, 10);
+        const slicedForecast = fetchedForecast.energyPropForecast.slice(
+          0,
+          hours
+        );
         const convertedForecast = slicedForecast.map((forecast) => ({
           time: convert(forecast.time),
           gsi: forecast.gsi,
@@ -49,7 +54,7 @@ export const Chart = () => {
       }
     }
     fetchData();
-  }, [zip]);
+  }, [zip, hours]);
 
   if (loading) {
     return <LoadingScreen />;
@@ -90,7 +95,7 @@ export const Chart = () => {
           {forecastData.map((entry, index) => (
             <Cell
               fill={
-                entry.gsi < 35 ? "red" : entry.gsi < 60 ? "yellow" : "green"
+                entry.gsi < 35 ? "red" : entry.gsi < 60 ? "#F4A321" : "#3D846D"
               }
               key={index}
             />

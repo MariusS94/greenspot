@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import energySrc from "../assets/energy.svg";
 import newsSrc from "../assets/news.svg";
 import carSrc from "../assets/car.svg";
-import optionsSrc from "../assets/options.svg";
 
 const FooterContainer = styled.footer`
   background: rgba(134, 134, 134, 0.5);
@@ -19,7 +18,7 @@ const FooterNav = styled.nav`
 const FooterIcon = styled.img`
   width: 3rem;
   height: 3rem;
-  padding: 1rem 0;
+  padding: 0.7rem 0;
 `;
 
 export const Footer = () => {
@@ -34,9 +33,6 @@ export const Footer = () => {
         </Link>
         <Link to="/mobility/home">
           <FooterIcon src={carSrc} alt="e-car charge icon" />
-        </Link>
-        <Link to="/options">
-          <FooterIcon src={optionsSrc} alt="options icon" />
         </Link>
       </FooterNav>
     </FooterContainer>
