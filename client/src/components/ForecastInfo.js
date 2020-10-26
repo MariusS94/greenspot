@@ -14,10 +14,7 @@ export const ForecastInfo = () => {
       <Headline>Information</Headline>
       <InfoText>
         Der Anteil von Strom aus regenerativen Quellen in unserem Stromnetz
-        schwangt extrem. Der Aussbau der regenerativen Stromerzeuger wächst zwar
-        stetig, aber schon heute bleibt viel Ökostrom ungenutz, weil es sich
-        immer noch schwierg geschtaltet große Mengen Strom zu speichern. Wäre es
-        also nicht super zu wissen wann der Ökostromanteil im heimischen
+        schwangt extrem. Wäre es also nicht super zu wissen wann der Ökostromanteil im heimischen
         Stromnetz besonders hoch ist, damit man seine energieintensiven
         Tätigkeiten am besten für einen solchen Zeitraum einplant? Genau dabei
         möchte GreenSpot behilflich sein. Über die Eingabe seiner Postleitzahl
